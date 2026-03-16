@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tile Font Reference</title>
+
+<style>
+@font-face {
+  font-family: "TILESportfolio";
+  src: url("TILESportfolio.ttf") format("truetype");
+}
+
+body {
+  font-family: monospace;
+  background: white;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 6px;
+}
+
+.cell {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.cell.done {
+  background: #b7f5b7; /* green highlight */
+}
+
+.original {
+  font-size: 14px;
+  color: #777;
+}
+
+.tile {
+  font-family: "TILESportfolio";
+  font-size: 32px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Tile Font Mapping</h2>
+<p>Click tiles to mark them as categorized.</p>
+
+<div class="grid" id="sheet"></div>
+
+<script>
+const container = document.getElementById("sheet");
+
+function addRange(start, end) {
+  for (let i = start; i <= end; i++) {
+    addChar(String.fromCharCode(i));
+  }
+}
+
+function addChar(char) {
+  const cell = document.createElement("div");
+  cell.className = "cell";
+
+  const original = document.createElement("div");
+  original.className = "original";
+  original.textContent = char;
+
+  const tile = document.createElement("div");
+  tile.className = "tile";
+  tile.textContent = char;
+
+  cell.appendChild(original);
+  cell.appendChild(tile);
+
+  // Toggle green state on click
+  cell.addEventListener("click", () => {
+    cell.classList.toggle("done");
+  });
+
+  container.appendChild(cell);
+}
+
+// A–Z
+addRange(65, 90);
+
+// a–z
+addRange(97, 122);
+
+// 0–9
+addRange(48, 57);
+
+// Symbols
+const symbols = [
+  "!", "\"", "#", "$", "%", "&", "'",
+  "(", ")", "*", "+", ",", "-", ".",
+  "/", ":", ";", "<", "=", ">", "?",
+  "@", "[", "\\", "]", "^", "_", "`",
+  "{", "|", "}", "~"
+];
+
+symbols.forEach(addChar);
+</script>
+
+</body>
+</html>

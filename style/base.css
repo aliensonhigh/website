@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "TILESportfolio";
+  src: url("../assets/Fonts/TILESportfolio.ttf");
+}
+
+@font-face {
+  font-family: "PixelPlay";
+  src: url("../assets/Fonts/pixelplay.ttf");
+}
+
+:root{
+  --caption-height:30px;
+
+  /* map palettes */
+  --rocks-1:#888181;
+  --rocks-2:#897b5b;
+  --rocks-3:#614d2e;
+
+  --grass-1:#818d54;
+  --grass-2:#44872e;
+  --grass-3:#137518;
+
+  --water-1:#556e80;
+  --water-2:#3a788f;
+  --water-3:#346475;
+
+  --paths-1:#c2a77b;
+  --paths-2:#ab9871;
+
+  --ground-1:#68554d;
+  --ground-2:#5e524c;
+
+  --building-1:#b81515;
+  --buildingTop-1:#4d3909;
+
+  --empty-1:rgb(223,207,185);
+}
+
+body{
+  margin:0;
+  font-family:PixelPlay;
+  background:rgb(223,207,185);
+}
+
+/* shared layout */
+
+#layout{
+  display:grid;
+  grid-template-columns:1fr 250px;
+  height:100vh;
+}
+
+/* sidebar content (shared) */
+
+#gui{
+  padding:1rem;
+  background:rgb(223,207,185);
+  overflow-y:auto;
+}
+
+#gui ul{
+  list-style:none;
+  position:relative;
+  line-height:1.1;
+}
+
+#gui li::before{
+  content:">";
+  position:absolute;
+  left:0;
+}
+
+/* table of contents */
+
+#toc ul{
+  padding:0;
+  margin:0;
+  counter-reset: toc;
+}
+
+#toc li{
+  list-style:none;
+  counter-increment: toc;
+}
+
+#toc li::before{
+  content:none;
+}
+
+#toc a{
+  display:flex;
+  align-items:flex-end;
+  text-decoration:none;
+  color:rgb(230,7,7);
+}
+
+#toc a::before{
+  content:">";
+  margin-right:8px;
+}
+
+/* dots that stretch */
+
+#toc a::after{
+  content:" ." counter(toc);
+  flex:1;
+  border-bottom:2px dotted red;
+  margin:0 12px 2px 8px;
+  text-align:right;
+  color:red;
+}
+
+/* hover */
+
+#toc a:hover{
+  color:rgb(63,8,8);
+  transform:translateX(4px);
+}
+
+/* visited */
+
+#toc a:visited{
+  color:rgb(99,85,85);
+}
+
+/* active */
+
+#toc a:active{
+  color:yellow;
+}
+
+@keyframes menuBlink{
+  0%{opacity:1;}
+  50%{opacity:0;}
+  100%{opacity:1;}
+}
+
+#toc a:hover::before{
+  animation:menuBlink 0.8s steps(1) infinite;
+  color:rgb(255, 247, 0);
+  font-weight: bold;
+  text-shadow: 0px 1px black;
+}
+
+.page-index a[href="index.html"],
+.page-about a[href="about.html"],
+.page-archive a[href="archives.html"],
+.page-cv a[href="cv.html"]{
+  background:#d5b5a048;
+  box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.39);
+  border-radius: 2px;
+  padding:3px 0px;
+}
+
+.page-index a[href="index.html"]::before,
+.page-about a[href="about.html"]::before,
+.page-archive a[href="archives.html"]::before,
+.page-cv a[href="cv.html"]::before{
+  animation:menuBlink 2s steps(1) infinite;
+  color:rgb(255, 0, 0);
+  font-weight:bold;
+  text-shadow:0px 1px black;
+}
+
+
+/* captions */
+
+#caption{
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+
+  height:var(--caption-height);
+  padding:0 1rem;
+
+  background-color: rgb(173, 17, 17);
+  color: rgb(212,200,72);
+  
+  text-shadow:
+    -1px -1px black,
+     1px -1px black,
+    -1px  1px black,
+     1px  1px black;
+  display:flex;
+  align-items:center;
+
+  font-size:20px;
+}
+
+.player-symbol{
+  font-family:TILESportfolio;
+  font-size:20px;
+}

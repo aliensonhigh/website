@@ -1,0 +1,179 @@
+/* PROJECT LAYOUT */
+
+.project-layout{
+  display:grid;
+  grid-template-columns:1fr 2fr;
+  gap:40px;
+}
+
+.project-info{
+  max-width:500px;
+}
+
+.project-meta{
+  font-size:16px;
+  opacity:0.8;
+  margin-bottom:12px;
+}
+
+#project-long{
+  white-space:pre-line;
+  text-align:justify;
+}
+
+/* GALLERY */
+
+.project-gallery{
+  column-count:2;
+  column-gap:16px;
+}
+
+@media (max-width:900px){
+  .project-gallery{ column-count:2; }
+}
+
+@media (max-width:500px){
+  .project-gallery{ column-count:1; }
+}
+
+.gallery-image{
+  width:100%;
+  height:auto;
+  margin-bottom:14px;
+  break-inside:avoid;
+  display:block;
+  cursor:pointer;
+}
+
+.gallery-image{
+  transition:transform .15s ease;
+}
+
+.gallery-image:hover{
+  transform:scale(1.01);
+}
+
+.gallery-image{
+  width:100%;
+  height:auto;
+  margin-bottom:16px;
+  break-inside:avoid;
+  display:block;
+  cursor:pointer;
+  transition:transform .15s ease;
+}
+
+.gallery-image:hover{
+  transform:scale(1.02);
+}
+
+.gallery-video{
+  width:100%;
+  height:auto;
+  margin-bottom:16px;
+  break-inside:avoid;
+}
+
+/* LIGHTBOX */
+
+.image-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.9);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+}
+
+/* container */
+
+.lightbox-ui{
+  position:relative;
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+/* main image */
+
+.lightbox-image{
+  max-width:90vw;
+  max-height:90vh;
+}
+
+/* arrows */
+
+.lightbox-arrow{
+  font-family:PixelPlay;
+  font-size:32px;
+  color:white;
+  cursor:pointer;
+  user-select:none;
+}
+
+.lightbox-arrow:hover{
+  transform:scale(1.1);
+}
+
+.gallery-image.cursor-hover{
+  outline:2px solid red;
+}
+
+/* VIDEO */
+
+#project-video{
+  margin-top:40px;
+  max-width:900px;
+}
+
+#project-video iframe{
+  width:100%;
+  aspect-ratio:16/9;
+}
+
+.video-viewer{
+  width:100%;
+  max-height:80vh;
+}
+
+.video-viewer iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  max-height:80vh;
+  border:none;
+}
+
+.video-icon{
+  font-family:PixelPlay;
+  font-size: 30px;
+  color:red;
+  text-shadow: 1px 1px black;
+}
+
+/* ESSAY VIEWER */
+
+.essay-viewer{
+  margin-top:20px;
+  max-width:1100px;
+}
+
+.essay-viewer iframe{
+  width:100%;
+  height:900px;
+  border:none;
+}
+
+.essay-download{
+  margin-top:10px;
+}
+
+.essay-download a{
+  font-family:PixelPlay;
+  color:rgb(230,7,7);
+  text-decoration:none;
+}
+
+.essay-download a:hover{
+  text-decoration:underline;
+}

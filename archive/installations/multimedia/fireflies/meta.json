@@ -1,0 +1,8 @@
+{
+  "title": "Fireflies",
+  "year": "2025",
+  "medium": "screens, camera, pixel art, TouchDesigner",
+  "short": "An animated triptych with a hidden artwork that reveals itself when the viewer approaches.",
+  "long": "This world is full of secrets, some even hidden within plain sight. Our entire reality is composed of atoms and particles, completely obscured to us. The very foundations of everything around us is completely unseen.\n\nSo how do you transition between our perceived reality and the microscopic cosmos within us? This animated triptych only reveals itself once the viewer approaches.\n\nMost of us interact with screens constantly: televisions, phones, computers, billboards, vending machines, and more. Yet within this familiar tool there exists a hidden language.\n\nScreens are composed of RGB pixels that use light to create the images we see. Each pixel contains three colours: red, green, and blue. Within even a single 1×1 pixel image, three separate light elements exist.\n\nIn this work I use those individual components to create a form of digital image-making known as subpixel art. Pixels display colour through additive colour mixing, breaking colours into RGB values that control the intensity of each diode. By selectively activating those diodes, patterns emerge within the pixel itself.",
+  "extra":"extra.html"
+}

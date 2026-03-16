@@ -1,0 +1,66 @@
+.home #layout{
+  height:calc(100vh - var(--caption-height));
+}
+
+#viewport{
+  position:relative;
+  overflow:hidden;
+  cursor:pointer;
+}
+
+/* world map */
+
+#world{
+  position:absolute;
+  top:0;
+  left:0;
+
+  padding:1rem;
+  font-size:30px;
+  font-family:TILESportfolio;
+
+  line-height:1;
+  white-space:nowrap;
+
+  user-select:none;
+}
+
+.tile{
+  display:inline-block;
+  width:1em;
+  text-align:center;
+}
+
+.tile.interactive{
+  cursor:pointer;
+}
+
+/* map labels */
+
+.map-label{
+  position:absolute;
+
+  font-family:PixelPlay;
+  font-size:18px;
+  font-weight:bolder;
+  letter-spacing:-1px;
+
+  color:rgb(212,200,72);
+
+  text-shadow:
+    -1px -1px black,
+     1px -1px black,
+    -1px  1px black,
+     1px  1px black,
+     3px 2px 3px rgba(32,25,3,0.82);
+
+  padding:0 10px;
+  pointer-events:none;
+  white-space:nowrap;
+}
+
+.label-arrow{
+  display:inline-block;
+  margin-right:20px;
+  transform-origin:center;
+}

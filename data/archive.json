@@ -1,0 +1,196 @@
+{
+  "folders": [
+    {
+      "name": "digital",
+      "path": "archive/digital",
+      "folders": [
+        {
+          "name": "video",
+          "path": "archive/digital/video",
+          "folders": [
+            {
+              "name": "animations",
+              "path": "archive/digital/video/animations",
+              "folders": [
+                {
+                  "name": "welcome to paradise",
+                  "path": "archive/digital/video/animations/welcome to paradise",
+                  "works": [
+                    {
+                      "title": "welcometoparadise",
+                      "year": "2023",
+                      "medium": "3d renders",
+                      "short": "generate a description for a cool and hip office introductional video",
+                      "slug": "1",
+                      "video": "Uu1IrWaLzqc?si=dPbFgV_xm5bmQr6y",
+                      "images": []
+                    },
+                    {
+                      "title": "paradise2",
+                      "year": "2023",
+                      "medium": "3d renders",
+                      "short": "the office drones get on with their antics!",
+                      "slug": "2",
+                      "video": "1bzL652ZDx0?si=Xec71nvzRB6s-NTu",
+                      "images": []
+                    }
+                  ]
+                }
+              ],
+              "works": [
+                {
+                  "title": "HEAD",
+                  "year": "2023",
+                  "medium": "3d renders",
+                  "short": "hey lois, remember that one time i ate my own head?",
+                  "slug": "head",
+                  "video": "hI3TYD1KxbQ?si=2ofY0bUIKOGZdrIm",
+                  "images": []
+                }
+              ]
+            },
+            {
+              "name": "film essays",
+              "path": "archive/digital/video/film essays"
+            },
+            {
+              "name": "machinima",
+              "path": "archive/digital/video/machinima",
+              "works": [
+                {
+                  "title": "Agonies of a Dying Star",
+                  "year": "2024",
+                  "medium": "Machinima, Live Footage, 3d renders",
+                  "short": "a short machinima film about a robot who misses you. made in gmod, music by c418 'The End'. Poems featured by Sara Teasdale 'There Will Come Soft Rains'and T.S Elliot 'The Hollow Men' and GPT 2",
+                  "slug": "agonies of a dying star",
+                  "video": "p6iW8TtYCqQ?si=6PqrI46ag2t6tHwy",
+                  "images": []
+                },
+                {
+                  "title": "idontwanttoseeyouanymore.mp4",
+                  "year": "2024",
+                  "medium": "machinima, screen recordings",
+                  "short": "i wish you were here",
+                  "slug": "i dont want to see you anymore",
+                  "video": "pPh0PpGppZI?si=2DICxrao7bG197OB",
+                  "images": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "essays",
+      "path": "archive/essays",
+      "folders": [
+        {
+          "name": "on videogames",
+          "path": "archive/essays/on videogames",
+          "works": [
+            {
+              "title": "The Socio-Political Impact of Game Design",
+              "year": "2024",
+              "medium": "Essay",
+              "short": "How does Cities: Skylines Manage its Identity as a Video Game and an Urban Planning Simulation",
+              "slug": "cities skylines",
+              "video": null,
+              "images": []
+            },
+            {
+              "title": "Video Games As An Art Form",
+              "year": "2022",
+              "medium": "Essay",
+              "short": "To What Extent Does The Game 'Control' Use Brutalism To Create A Surreal Visual Experience For Its Viewers?",
+              "slug": "control",
+              "video": null,
+              "images": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "installations",
+      "path": "archive/installations",
+      "folders": [
+        {
+          "name": "interactive",
+          "path": "archive/installations/interactive",
+          "works": [
+            {
+              "title": "Between Id and Ego",
+              "year": "2024",
+              "medium": "projection, Arduino, LCD screen, MaxMSP, bitmaps, found footage, recycled wood",
+              "short": "a multiple-choice text-based RPG, inspired by video game and retro tech culture.",
+              "slug": "between id and ego",
+              "video": null,
+              "images": [
+                "01.jpg",
+                "02.jpg",
+                "03.jpg",
+                "04.jpg",
+                "05.jpg",
+                "06.jpg",
+                "07.jpg",
+                "08.jpg",
+                "09.jpg",
+                "10.jpg",
+                "11.png"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "multimedia",
+          "path": "archive/installations/multimedia",
+          "works": [
+            {
+              "title": "Fireflies",
+              "year": "2025",
+              "medium": "screens, camera, pixel art, TouchDesigner",
+              "short": "An animated triptych with a hidden artwork that reveals itself when the viewer approaches.",
+              "slug": "fireflies",
+              "video": null,
+              "images": [
+                "01.jpg",
+                "02.jpg",
+                "03.jpg",
+                "04.jpg",
+                "05.jpg",
+                "06.jpg",
+                "07.jpg",
+                "08.jpg",
+                "09.png",
+                "10.png",
+                "11.png",
+                "subpixel.gif"
+              ]
+            },
+            {
+              "title": "Temporality",
+              "year": "2023",
+              "medium": "Screen, projection, camera, charcoal on paper, digital renders, video",
+              "short": "Triptychs that present different elements of time, and the relationship between viewer and artist.",
+              "slug": "temporality",
+              "video": null,
+              "images": [
+                "01.jpg",
+                "02.jpg",
+                "03.jpg",
+                "04.jpg",
+                "05.mp4",
+                "06.jpg",
+                "07.jpg",
+                "08.jpg",
+                "09.mp4",
+                "10.mp4"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

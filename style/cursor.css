@@ -1,0 +1,24 @@
+#cursor{
+  position:fixed;
+  font-family:TILESportfolio;
+  font-size:24px;
+  pointer-events:none;
+  z-index:9999;
+}
+
+.cursor-trail{
+  position:fixed;
+  font-family:PixelPlay;
+  font-size:30px;
+  color:#5c5c5c;
+  pointer-events:none;
+}
+
+.cursor-trail::before{
+  content:".";
+  font-family:PixelPlay;
+}
+
+.cursor-hover{
+  background:rgba(0,0,0,0.1);
+}
