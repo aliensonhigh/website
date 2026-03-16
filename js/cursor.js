@@ -175,7 +175,7 @@ function checkHover(){
   const el = document.elementFromPoint(centerX, centerY);
   if(!el) return;
 
-  const link = el.closest("a, .folder-title, .work-header, .gallery-image, .lightbox-arrow");
+  const link = el.closest("a, .folder-title, .work-header, .gallery-image, .lightbox-arrow, .archive-back");
   
   document.querySelectorAll(".cursor-hover")
   .forEach(e=>e.classList.remove("cursor-hover"));
