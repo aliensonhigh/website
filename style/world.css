@@ -16,7 +16,7 @@
   left:0;
 
   padding:1rem;
-  font-size:40px;
+  font-size:50px;
   font-family:TILESportfolio;
 
   line-height:1;
@@ -63,4 +63,30 @@
   display:inline-block;
   margin-right:20px;
   transform-origin:center;
+}
+
+
+/* captions */
+
+#caption{
+  position:fixed;
+  bottom:0px;
+  left:0;
+  right:0;
+
+  height:var(--caption-height);
+  padding:0 1rem;
+
+  background-color: rgba(0, 0, 0, 0.685);
+  color: rgb(212,200,72);
+  
+  text-shadow:
+    -1px -1px black,
+     1px -1px black,
+    -1px  1px black,
+     1px  1px black;
+  display:flex;
+  align-items:end;
+
+  font-size:20px;
 }

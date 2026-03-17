@@ -75,7 +75,7 @@ window.addEventListener("DOMContentLoaded", () => {
     water: ["j","k","l","m","n","o"],
     paths: ["p","q","r","s","t","u","v","w","x","y","z"],
     empty: ["_"],
-    ground: ["I","6","5","J","K","O","Z","a","h","!","/","#"]
+    ground: ["I","6","5","J","K","O","Z","a","h","!",";","#"]
   };
 
   const tileCategory = {};
@@ -96,8 +96,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
   const linkTiles = {
     A:{description:"Get a load of this guy!",url:"about.html"},
-    U:{description:"The Archaic Libraries",url:"archives.html"},
-    8:{description:"Wow, the stuff in here is pretty comprehensive. I wouldn't go in if I were you... if you're looking to hire, come on in...",url:"cv.html"},
+    U:{description:"Awesome library of cool and epic works",url:"archives.html"},
+    8:{description:"Wow, the stuff in here is pretty comprehensive. I wouldn't go in if I were you... unless... you're hiring, come on in...",url:"cv.html"},
     V:{description:"hey, psst, congrats on finding me. i love you."}
   };
 
