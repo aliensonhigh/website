@@ -56,6 +56,9 @@ body{
   padding:1rem;
   background:rgb(223,207,185);
   overflow-y:auto;
+
+  display:flex;
+  flex-direction:column;
 }
 
 #gui ul{
@@ -68,6 +71,24 @@ body{
   content:">";
   position:absolute;
   left:0;
+}
+
+.gui-credits{
+  margin-top:auto;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-family:PixelPlay;
+  font-size:16px;
+  text-align: right;
+}
+
+.gui-credits a{
+  color:rgb(230,7,7);
+  text-decoration:none;
+}
+
+.gui-credits a:hover{
+  text-decoration:underline;
 }
 
 /* table of contents */
